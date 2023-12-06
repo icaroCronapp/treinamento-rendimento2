@@ -1,0 +1,229 @@
+{
+  "customId": "query921333",
+  "queryName": "Periodo Personalizado",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "Periodo",
+  "entityFullName": "app.entity.Periodo",
+  "query": {
+    "isValid": true,
+    "rulesEntity": [
+      {
+        "entity": "Periodo",
+        "alias": "p",
+        "namespace": "app.entity.Periodo",
+        "dataSourceOptions": {
+          "id": "app.Periodo",
+          "customId": "Periodo",
+          "customQueryName": "app.Periodo",
+          "paramValues": [],
+          "entityFullName": "app.entity.Periodo",
+          "schemaFields": [
+            {
+              "name": "id",
+              "type": "String",
+              "nullable": false,
+              "key": false
+            },
+            {
+              "name": "dataInicial",
+              "type": "DateTime",
+              "nullable": true,
+              "key": false
+            },
+            {
+              "name": "dataFinal",
+              "type": "DateTime",
+              "nullable": true,
+              "key": false
+            },
+            {
+              "name": "ativo",
+              "type": "Boolean",
+              "nullable": true,
+              "key": false
+            },
+            {
+              "name": "per",
+              "type": "String",
+              "nullable": true,
+              "key": false
+            },
+            {
+              "name": "user",
+              "type": "String",
+              "nullable": true,
+              "key": false
+            },
+            {
+              "name": "_objectKey",
+              "type": "String",
+              "nullable": false,
+              "key": true
+            },
+            {
+              "name": "user_name",
+              "type": "String",
+              "nullable": true,
+              "key": false
+            }
+          ],
+          "type": "entity",
+          "hasError": false,
+          "customName": "Periodo",
+          "fullName": "app.entity.Periodo",
+          "labelName": "app.entity.Periodo (Periodo)"
+        },
+        "name": "Periodo"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "p"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "valid": true,
+      "rules": []
+    }
+  },
+  "queryParamsValues": [],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": {
+      "type": "server",
+      "blocklyMethod": "validaAntesDeInserir",
+      "blocklyClass": "blockly.Periodo",
+      "blocklyLanguage": "java",
+      "blocklyParams": [
+        {
+          "id": "be8f3e29",
+          "name": "Entidade\u0026lt;app.entity.Periodo\u0026gt;",
+          "value": "data",
+          "type": "CUSTOM"
+        }
+      ],
+      "blocklyJson": {
+        "namespace": "blockly.Periodo",
+        "sourcePath": "src/main/java/blockly/Periodo.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "automatizaUser",
+            "hasReturn": "true",
+            "params": [
+              "Entidade\u0026lt;app.entity.Periodo\u0026gt;"
+            ]
+          },
+          {
+            "name": "validaAntesDeInserir",
+            "hasReturn": "true",
+            "params": [
+              "Entidade\u0026lt;app.entity.Periodo\u0026gt;"
+            ]
+          }
+        ]
+      }
+    },
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onAuthorize": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "id": null,
+    "dataInicial": null,
+    "dataFinal": null,
+    "ativo": null,
+    "per": null,
+    "user": {
+      "blocklyClass": "blockly.Periodo",
+      "blocklyMethod": "automatizaUser",
+      "blocklyLanguage": "java",
+      "blocklyParams": [
+        {
+          "name": "Entidade\u003capp.entity.Periodo\u003e",
+          "value": "data",
+          "type": "CUSTOM"
+        }
+      ],
+      "blocklyJson": {
+        "library": false,
+        "namespace": "blockly.Periodo",
+        "sourcePath": "src/main/java/blockly/Periodo.blockly",
+        "language": "java",
+        "class": "blockly.Periodo",
+        "methods": [
+          {
+            "name": "automatizaUser",
+            "hasReturn": "true",
+            "params": [
+              "Entidade\u003capp.entity.Periodo\u003e"
+            ]
+          }
+        ]
+      },
+      "blocklyGETMethod": null,
+      "blocklyPOSTMethod": null,
+      "blocklyPUTMethod": null,
+      "blocklyDELETEMethod": null,
+      "blocklyFILTERMethod": null,
+      "blocklyCOUNTMethod": null
+    },
+    "user_name": null
+  },
+  "defaultValuesProperties": {
+    "id": null,
+    "dataInicial": null,
+    "dataFinal": null,
+    "ativo": null,
+    "per": null,
+    "user": null,
+    "user_name": null
+  },
+  "security": {
+    "id": null,
+    "dataInicial": null,
+    "dataFinal": null,
+    "ativo": null,
+    "per": null,
+    "user": null,
+    "user_name": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query921333/",
+  "audit": false,
+  "swagger": false,
+  "library": false
+}
